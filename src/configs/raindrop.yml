@@ -3,7 +3,7 @@ data:
     image_size: 128
     channels: 3
     num_workers: 2
-    data_dir: "/kaggle/working/data/raindrop"
+    data_dir: "/kaggle/working/data"
     result_dir: "/kaggle/working/result"
     conditional: True
 
