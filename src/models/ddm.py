@@ -181,7 +181,7 @@ class DenoisingDiffusion(object):
                 utils.logging.save_logs([
                     f'Epoch [{epoch}/{self.config.training.n_epochs}]', 
                     f'Step [{self.step}/{self.config.training.num_batch}]',
-                    loss.item()])
+                    loss.item()], self.config.data.result_dir)
 
             utils.logging.save_checkpoint({
                 'epoch': epoch + 1,

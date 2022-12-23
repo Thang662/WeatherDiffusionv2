@@ -28,7 +28,7 @@ diffusion:
 
 training:
     num_batch: 430
-    patch_n: 32
+    patch_n: 8
     batch_size: 2
     n_epochs: 20000
     n_iters: 2000000

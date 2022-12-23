@@ -16,8 +16,8 @@ def save_checkpoint(state, filename):
         os.makedirs(os.path.dirname(filename))
     torch.save(state, filename + '.pth.tar')
 
-def save_logs(status_log):
-    fname = os.path.join('../result/logs', 'ddpm_log.csv')
+def save_logs(status_log, path):
+    fname = os.path.join(path, 'ddpm_log.csv')
     f=open(fname,'ab')
     # header = ['Time', 'Epoch', 'Step', 'Loss']
     with open(fname, 'ab') as f:
