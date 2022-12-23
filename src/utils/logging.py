@@ -17,7 +17,7 @@ def save_checkpoint(state, filename):
     torch.save(state, filename + '.pth.tar')
 
 def save_logs(status_log, path):
-    fname = os.path.join(path, 'ddpm_log.csv')
+    fname = os.path.join('/kaggle/working', 'ddpm_log.csv')
     f=open(fname,'ab')
     # header = ['Time', 'Epoch', 'Step', 'Loss']
     with open(fname, 'ab') as f:

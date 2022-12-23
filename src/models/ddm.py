@@ -191,7 +191,7 @@ class DenoisingDiffusion(object):
                 'ema_helper': self.ema_helper.state_dict(),
                 'params': self.args,
                 'config': self.config
-            }, filename=os.path.join(self.config.data.result_dir, 'weights', self.config.model.name))
+            }, filename=os.path.join('/kaggle/working', self.config.model.name))
 
 
     def sample_image(self, x_cond, x, last=True, patch_locs=None, patch_size=None):
