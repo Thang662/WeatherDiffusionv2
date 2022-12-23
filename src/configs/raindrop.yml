@@ -1,10 +1,10 @@
 data:
     dataset: "RainDrop"
-    image_size: 32
+    image_size: 128
     channels: 3
-    num_workers: 1
-    data_dir: "D:\\thang\\20221\\deeplearning\\DDPM"
-    result_dir: "D:\\thang\\20221\\deeplearning\\Group16\\result"
+    num_workers: 2
+    data_dir: "/kaggle/working/data"
+    result_dir: "/kaggle/working/result"
     conditional: True
 
 model:
@@ -27,13 +27,13 @@ diffusion:
     num_diffusion_timesteps: 100
 
 training:
-    num_batch: 860
-    patch_n: 32
-    batch_size: 1
+    num_batch: 430
+    patch_n: 8
+    batch_size: 2
     n_epochs: 20000
     n_iters: 2000000
-    snapshot_freq: 860
-    validation_freq: 860
+    snapshot_freq: 430
+    validation_freq: 430
 
 sampling:
     batch_size: 1
